@@ -1,0 +1,35 @@
+<div>
+  <section class="sideForm">
+    <!-- Form Header -->
+    <h2 class="filterHeading">FILTERS</h2>
+    <hr class="divider" />
+
+    <!-- Filtering Form -->
+    <form class="filterForm" [formGroup]="filterForm" (submit)="submit()">
+      <mat-form-field
+        class="example-full-width"
+        appearance="fill"
+        *ngFor="let filterConfig of filtersConfig"
+      >
+        <mat-label>{{ filterConfig.title }}</mat-label>
+        <input
+          *ngIf="filterConfig.type !== 'dropdown'; else dropdown"
+          [type]="filterConfig.type"
+          matInput
+          [formControlName]="filterConfig.title | lowercase"
+        />
+        <ng-template #dropdown
+          ><mat-select formControlName="country">
+            <mat-option value=""> USA </mat-option>
+            <mat-option value=""> EGY </mat-option>
+          </mat-select></ng-template
+        >
+      </mat-form-field>
+
+      <!-- Form Buttons -->
+      <div class="formBtn">
+        <button class="filterBtn" type="submit">Filter</button>
+      </div>
+    </form>
+  </section>
+</div>

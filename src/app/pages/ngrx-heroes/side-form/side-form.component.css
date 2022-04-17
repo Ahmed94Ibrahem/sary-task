@@ -1,0 +1,43 @@
+.sideForm {
+  padding: 30px 20px;
+  overflow: hidden;
+}
+.sideForm .filterHeading {
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+.sideForm .divider {
+  width: 360px;
+  position: relative;
+  left: -20px;
+  top: 20px;
+}
+.filterForm {
+  margin-top: 50px;
+}
+
+mat-form-field {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.formBtn {
+  text-align: center;
+}
+.formBtn .filterBtn {
+  padding: 8px 20px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 22px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}

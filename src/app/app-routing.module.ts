@@ -7,6 +7,13 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/heroes/heroes.module').then((m) => m.HeroesModule),
   },
+  {
+    path: 'ngrx-heroes',
+    loadChildren: () =>
+      import('./pages/ngrx-heroes/ngrx-heroes.module').then(
+        (m) => m.NgrxHeroesModule
+      ),
+  },
 ];
 
 @NgModule({

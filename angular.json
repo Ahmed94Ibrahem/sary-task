@@ -104,5 +104,8 @@
       }
     }
   },
-  "defaultProject": "sary-task"
+  "defaultProject": "sary-task",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }

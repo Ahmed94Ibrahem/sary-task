@@ -1,0 +1,8 @@
+<mat-drawer-container>
+  <mat-drawer mode="side" [opened]="sideBarOpen">
+    <app-side-form></app-side-form>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-index (toggleMySidebar)="sideBarToggler()"></app-index>
+  </mat-drawer-content>
+</mat-drawer-container>
