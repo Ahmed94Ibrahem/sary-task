@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+}
+.tableHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  background: white;
+  padding: 0 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.tableHeading .heroes h2 {
+  margin: 0;
+}
+.tableHeading .icons {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+.searchIcon {
+  margin: 20px;
+}
+mat-icon {
+  cursor: pointer;
+}
